@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		117BC5841CC9361500AF545B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117BC5831CC9361500AF545B /* AppDelegate.swift */; };
+		117BC58B1CC9361500AF545B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 117BC58A1CC9361500AF545B /* Assets.xcassets */; };
+		117BC58E1CC9361500AF545B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 117BC58C1CC9361500AF545B /* LaunchScreen.storyboard */; };
+		117BC5981CC9365000AF545B /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117BC5971CC9365000AF545B /* UIColor.swift */; };
+		117BC59A1CC9367800AF545B /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117BC5991CC9367800AF545B /* NavigationController.swift */; };
+		117BC5A01CC938D200AF545B /* HarvestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117BC59F1CC938D200AF545B /* HarvestViewController.swift */; };
+		117BC5A21CC938F400AF545B /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117BC5A11CC938F400AF545B /* TableView.swift */; };
+		117BC5A61CC9508800AF545B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117BC5A51CC9508800AF545B /* TableViewCell.swift */; };
+		117BC5A81CC950CB00AF545B /* HarvestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117BC5A71CC950CB00AF545B /* HarvestTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		117BC5801CC9361500AF545B /* Happy Farmer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Happy Farmer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		117BC5831CC9361500AF545B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		117BC58A1CC9361500AF545B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		117BC58D1CC9361500AF545B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		117BC58F1CC9361500AF545B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		117BC5971CC9365000AF545B /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		117BC5991CC9367800AF545B /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		117BC59F1CC938D200AF545B /* HarvestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HarvestViewController.swift; sourceTree = "<group>"; };
+		117BC5A11CC938F400AF545B /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		117BC5A51CC9508800AF545B /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		117BC5A71CC950CB00AF545B /* HarvestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HarvestTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		117BC57D1CC9361500AF545B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		117BC5771CC9361500AF545B = {
+			isa = PBXGroup;
+			children = (
+				117BC5821CC9361500AF545B /* Happy Farmer */,
+				117BC5811CC9361500AF545B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		117BC5811CC9361500AF545B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				117BC5801CC9361500AF545B /* Happy Farmer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		117BC5821CC9361500AF545B /* Happy Farmer */ = {
+			isa = PBXGroup;
+			children = (
+				117BC5951CC9363E00AF545B /* App */,
+				117BC5961CC9364600AF545B /* Common */,
+				117BC59D1CC9385A00AF545B /* TableView */,
+				117BC59E1CC9386100AF545B /* Harvest */,
+			);
+			path = "Happy Farmer";
+			sourceTree = "<group>";
+		};
+		117BC5951CC9363E00AF545B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				117BC5831CC9361500AF545B /* AppDelegate.swift */,
+				117BC58A1CC9361500AF545B /* Assets.xcassets */,
+				117BC58C1CC9361500AF545B /* LaunchScreen.storyboard */,
+				117BC58F1CC9361500AF545B /* Info.plist */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		117BC5961CC9364600AF545B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				117BC5971CC9365000AF545B /* UIColor.swift */,
+				117BC5991CC9367800AF545B /* NavigationController.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		117BC59D1CC9385A00AF545B /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				117BC5A11CC938F400AF545B /* TableView.swift */,
+				117BC5A51CC9508800AF545B /* TableViewCell.swift */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		117BC59E1CC9386100AF545B /* Harvest */ = {
+			isa = PBXGroup;
+			children = (
+				117BC59F1CC938D200AF545B /* HarvestViewController.swift */,
+				117BC5A71CC950CB00AF545B /* HarvestTableViewCell.swift */,
+			);
+			name = Harvest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		117BC57F1CC9361500AF545B /* Happy Farmer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 117BC5921CC9361500AF545B /* Build configuration list for PBXNativeTarget "Happy Farmer" */;
+			buildPhases = (
+				117BC57C1CC9361500AF545B /* Sources */,
+				117BC57D1CC9361500AF545B /* Frameworks */,
+				117BC57E1CC9361500AF545B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Happy Farmer";
+			productName = "Happy Farmer";
+			productReference = 117BC5801CC9361500AF545B /* Happy Farmer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		117BC5781CC9361500AF545B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Alexander Grebenschikov";
+				TargetAttributes = {
+					117BC57F1CC9361500AF545B = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 117BC57B1CC9361500AF545B /* Build configuration list for PBXProject "Happy Farmer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 117BC5771CC9361500AF545B;
+			productRefGroup = 117BC5811CC9361500AF545B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				117BC57F1CC9361500AF545B /* Happy Farmer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		117BC57E1CC9361500AF545B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				117BC58E1CC9361500AF545B /* LaunchScreen.storyboard in Resources */,
+				117BC58B1CC9361500AF545B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		117BC57C1CC9361500AF545B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				117BC5A61CC9508800AF545B /* TableViewCell.swift in Sources */,
+				117BC5A21CC938F400AF545B /* TableView.swift in Sources */,
+				117BC5A01CC938D200AF545B /* HarvestViewController.swift in Sources */,
+				117BC59A1CC9367800AF545B /* NavigationController.swift in Sources */,
+				117BC5981CC9365000AF545B /* UIColor.swift in Sources */,
+				117BC5A81CC950CB00AF545B /* HarvestTableViewCell.swift in Sources */,
+				117BC5841CC9361500AF545B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		117BC58C1CC9361500AF545B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				117BC58D1CC9361500AF545B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		117BC5901CC9361500AF545B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		117BC5911CC9361500AF545B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		117BC5931CC9361500AF545B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Happy Farmer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = su.package.farmer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		117BC5941CC9361500AF545B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Happy Farmer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = su.package.farmer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		117BC57B1CC9361500AF545B /* Build configuration list for PBXProject "Happy Farmer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				117BC5901CC9361500AF545B /* Debug */,
+				117BC5911CC9361500AF545B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		117BC5921CC9361500AF545B /* Build configuration list for PBXNativeTarget "Happy Farmer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				117BC5931CC9361500AF545B /* Debug */,
+				117BC5941CC9361500AF545B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 117BC5781CC9361500AF545B /* Project object */;
+}
