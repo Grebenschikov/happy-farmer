@@ -104,45 +104,35 @@ class TableView: UIScrollView {
     func movingCell(cell: TableViewCell, withTouch touch: UITouch) {
         let y = touch.locationInView(self).y
         cell.center.y = y
+        
         let index = cell.index
-        if index != 0 && y < cells[index - 1].center.y {
+        
+        let flagUp = index != 0 && y < cells[index - 1].center.y
+        let flagDown = index != (cells.count - 1) && y > cells[index + 1].center.y
+        
+        if flagUp || flagDown {
+            let multiplier = flagUp ? 1 : -1
             cells.removeAtIndex(index)
-            cells.insert(cell, atIndex: index - 1)
-            cell.index -= 1
+            cells.insert(cell, atIndex: index - 1 * multiplier)
+            cell.index -= 1 * multiplier
             let anotherCell = cells[index]
-            anotherCell.index += 1
+            anotherCell.index += 1 * multiplier
             UIView.animateWithDuration(0.2, animations: {
-                anotherCell.frame.origin.y += anotherCell.frame.height
-            })
-        } else if index != (cells.count - 1) && y > cells[cell.index + 1].center.y {
-            cells.removeAtIndex(index)
-            cells.insert(cell, atIndex: index + 1)
-            cell.index += 1
-            let anotherCell = cells[index]
-            anotherCell.index -= 1
-            UIView.animateWithDuration(0.2, animations: {
-                anotherCell.frame.origin.y -= anotherCell.frame.height
+                anotherCell.frame.origin.y += anotherCell.frame.height * CGFloat(multiplier)
             })
         }
         
         let yDiff = y - contentOffset.y
-        if (yDiff - cell.frame.height) < 0 && (contentOffset.y + contentInset.top) >= 0 {
+        let semiHeight = cell.frame.height / 2
+        let scrollFlagUp = (yDiff - cell.frame.height) < 0 && (contentOffset.y + contentInset.top) >= 0
+        let scrollFlagDown = (contentSize.height - y - semiHeight) > 0 && (yDiff - frame.height + semiHeight) > 0
+        
+        if scrollFlagUp || scrollFlagDown {
             UIView.animateWithDuration(0.2, animations: {
-                self.contentOffset.y -= 5
+                self.contentOffset.y -= scrollFlagUp ? 5 : -5
             }) { _ in
                 if self.movedCellIndex != nil {
                     self.movingCell(cell, withTouch: touch)
-                }
-            }
-        } else {
-            let semiHeight = cell.frame.height / 2
-            if (contentSize.height - y - semiHeight) > 0 && (yDiff - frame.height + semiHeight) > 0 {
-                UIView.animateWithDuration(0.2, animations: {
-                    self.contentOffset.y += 5
-                }) { _ in
-                    if self.movedCellIndex != nil {
-                        self.movingCell(cell, withTouch: touch)
-                    }
                 }
             }
         }

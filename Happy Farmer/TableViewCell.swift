@@ -87,4 +87,5 @@ class TableViewCell: UIView {
         
         tableView?.movingCell(self, withTouch: touch)
     }
+    
 }
